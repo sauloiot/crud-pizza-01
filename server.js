@@ -10,7 +10,7 @@ app.use(cors());
 
 //iniciando o banco de dados 
 mongoose.connect(
-    'mongodb://localhost:27017/nodeapi',
+    'mongodb://saulo01:saulo1995@ds129459.mlab.com:29459/nodeapi',
     { useNewUrlParser: true }
     );
 
@@ -19,4 +19,6 @@ requireDir('./src/models');
 //rotas 
 app.use('/api', require('./src/routes'));
 
-app.listen(process.env.PORT || 3001);
+const port = process.env.PORT || 7000;
+
+app.listen(port, () => console.log(`Server is runnig on port: ${port}`));
