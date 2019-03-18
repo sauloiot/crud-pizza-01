@@ -13,6 +13,7 @@ app.use(cors());
 //     'mongodb://saulo01:saulo1995@ds129459.mlab.com:29459/nodeapi',
 //     { useNewUrlParser: true }
 //     );
+
 mongoose.connect(
     'mongodb+srv://max:max123@saulo01-uboe7.mongodb.net/test?retryWrites=true',
     { useNewUrlParser: true });
